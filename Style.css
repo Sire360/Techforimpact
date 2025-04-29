@@ -1,0 +1,33 @@
+.jumbotron {
+  background-color: #007B8A; /* Teal-blue */
+  color: #ffffff;
+}
+
+.navbar {
+  background-color: #004d61;
+}
+
+.logo, .logo-small, .carousel-control.right, .carousel-control.left,
+.carousel-indicators li.active, .panel-heading, .panel-footer .btn,
+footer .glyphicon {
+  color: #007B8A;
+}
+
+.panel {
+  border: 1px solid #007B8A;
+}
+
+.panel-footer .btn:hover {
+  border: 1px solid #007B8A;
+  color: #007B8A;
+}
+
+.btn-default {
+  background-color: #007B8A;
+  color: #fff;
+}
+
+.btn-default:hover {
+  background-color: #005f6a;
+  color: #fff;
+}

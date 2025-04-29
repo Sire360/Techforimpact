@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tech For Impact</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #2b2b2b;
+    }
+    h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #094074;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+    h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #094074;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }  
+    .jumbotron {
+      background-color: #3c6997;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+    }
+    .container-fluid {
+      padding: 60px 50px;
+    }
+    .bg-grey {
+      background-color: #f6f6f6;
+    }
+    .logo-small {
+      color: #3c6997;
+      font-size: 50px;
+    }
+    .logo {
+      color: #3c6997;
+      font-size: 200px;
+    }
+    .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+    }
+    .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+    }
+    .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #3c6997;
+    }
+    .carousel-indicators li {
+      border-color: #3c6997;
+    }
+    .carousel-indicators li.active {
+      background-color: #3c6997;
+    }
+    .item h4 {
+      font-size: 19px;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+    }
+    .item span {
+      font-style: normal;
+    }
+    .panel {
+      border: 1px solid #3c6997;
+      border-radius: 0 !important;
+      transition: box-shadow 0.5s;
+    }
+    .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+    }
+    .panel-footer .btn:hover {
+      border: 1px solid #3c6997;
+      background-color: #fff !important;
+      color: #3c6997;
+    }
+    .panel-heading {
+      color: #fff !important;
+      background-color: #3c6997 !important;
+      padding: 25px;
+    }
+    .panel-footer {
+      background-color: white !important;
+    }
+    .panel-footer h3 {
+      font-size: 32px;
+    }
+    .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+    }
+    .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #3c6997;
+      color: #fff;
+    }
+    .navbar {
+      margin-bottom: 0;
+      background-color: #094074;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+    }
+    .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+    }
+    .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #094074 !important;
+      background-color: #fff !important;
+    }
+    .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+    }
+    footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #3c6997;
+    }
+    .slideanim {
+      visibility: hidden;
+    }
+    .slide {
+      animation-name: slide;
+      animation-duration: 1s;
+      visibility: visible;
+    }
+    @keyframes slide {
+      0% {
+        opacity: 0;
+        transform: translateY(70%);
+      } 
+      100% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+      }
+      .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      .logo {
+        font-size: 150px;
+      }
+    }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Tech For Impact</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>Tech For Impact</h1> 
+  <p>Driving innovation for social good</p> 
+  <form>
+    <div class="input-group">
+      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-primary">Subscribe</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- About Section -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Tech For Impact</h2><br>
+      <h4>We empower communities through technology, innovation, and impact-driven solutions.</h4><br>
+      <p>Tech For Impact is a youth-led initiative leveraging digital tools, education, and local knowledge to transform lives and solve real-world challenges. We believe in the power of technology to uplift communities, improve livelihoods, and inspire sustainable development.</p>
+      <br><button class="btn btn-default btn-lg">Learn More</button>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
+</div>
+
+<!-- Services Section -->
+ <div id="services" class="container-fluid text-center">
+  <h2>SERVICES</h2>
+  <h4>What We Do</h4>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-education logo-small"></span>
+      <h4>DIGITAL LITERACY</h4>
+      <p>Training youth and communities in essential tech skills.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf logo-small"></span>
+      <h4>CLIMATE TECH</h4>
+      <p>Innovating for climate resilience and sustainability.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo-small"></span>
+      <h4>COMMUNITY ENGAGEMENT</h4>
+      <p>Collaborative solutions for local and global problems.</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-cog logo-small"></span>
+      <h4>TECH INNOVATION</h4>
+      <p>Building practical solutions to address community needs.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-briefcase logo-small"></span>
+      <h4>ENTREPRENEURSHIP</h4>
+      <p>Supporting young innovators to build sustainable ventures.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-comment logo-small"></span>
+      <h4>ADVOCACY</h4>
+      <p>Raising awareness and driving policy through tech-driven dialogue.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Portfolio Section -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2>Portfolio</h2><br>
+  <h4>Our Impact Projects</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="tech-training.jpg" alt="Training Program">
+        <p><strong>Youth Bootcamp</strong></p>
+        <p>Equipping youth with coding and business skills.</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="climate-initiative.jpg" alt="Climate Action">
+        <p><strong>Climate Action Lab</strong></p>
+        <p>Innovative approaches to tackle the climate crisis.</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="community.jpg" alt="Community Projects">
+        <p><strong>Village Tech Hubs</strong></p>
+        <p>Empowering rural areas with digital solutions.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact section can follow next -->
+  <div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Lusaka, Zambia</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +260 97 849 8129</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> simatesimasiku@gmail.com</p>
+      <br>
+      <a href="https://linktr.ee/SimateSimasiku" target="_blank" class="btn btn-primary">
+        <span class="glyphicon glyphicon-link"></span> Let's Connect
+      </a>
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
